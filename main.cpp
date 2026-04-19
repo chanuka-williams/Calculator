@@ -16,9 +16,9 @@ private:
     Gtk::Label m_label;
 };
 
-int main(int argc, char* argv[])
+int main(const int argc, char* argv[])
 {
-    auto app = Gtk::Application::create("org.example.hello");
+    const auto app = Gtk::Application::create("org.example.hello");
 
     return app->make_window_and_run<MainWindow>(argc, argv);
 }
